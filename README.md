@@ -43,6 +43,10 @@ Install
 ```bash
 pipenv shell --python 3.8
 ```
+if you have problems with starting pipenv try:
+```bash
+python -m pipenv shell --python 3.8
+```
 
 ```bash
 pip install -r requirements.txt
