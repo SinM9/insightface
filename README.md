@@ -19,7 +19,7 @@ docker run --name insightface_run insightface
 ```
 
 ```bash
-docker cp insightface_run:/tests .
+docker cp insightface_run:/ .
 ```
 
 Remove image
