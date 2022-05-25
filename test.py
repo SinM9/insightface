@@ -3,19 +3,10 @@ import numpy as np
 from models import face_track_server, face_describer_server, face_db, camera_server
 from configs import configs
 
-'''
-The demo app utilize all servers in model folder with simple business scenario/logics:
-I have a camera product and I need to use it to find all visitors in my store who came here before.
-
-Main logics is in the process function, where you can further customize.
-'''
-
-
-
-class Demo(camera_server.CameraServer):
+class Test(camera_server.CameraServer):
 
     def __init__(self, *args, **kwargs):
-        super(Demo, self).__init__(*args, **kwargs)
+        super(Test, self).__init__(*args, **kwargs)
         self.face_tracker = face_track_server.FaceTrackServer()
         self.face_describer = face_describer_server.FDServer(
             model_fp=configs.face_describer_model_fp,
@@ -70,7 +61,7 @@ class Demo(camera_server.CameraServer):
 
 
 if __name__ == '__main__':
-    demo = Demo(configs.test_video_fp)
-    demo.run()
+    test = Test(configs.test_video_fp)
+    test.run()
     print("test passed")
 
