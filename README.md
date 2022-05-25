@@ -1,5 +1,7 @@
 ## Demo [tf-insightface](https://github.com/AIInAi/tf-insightface)
 
+Download pre-trained [frozen model](https://drive.google.com/open?id=1Iw2Ckz_BnHZUi78USlaFreZXylJj7hnP) and put it under [`pretrained` folder](https://github.com/SinM9/insightface/tree/main/pretrained)
+
 ### Run with Docker
 ##### Requirements
 * Docker
